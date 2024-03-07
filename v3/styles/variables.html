@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Variables | Wee</title>
+    <meta name="description" content="Blueprint for modern web development">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.a0e9688a.css" as="style"><link rel="preload" href="/assets/js/app.47ec8783.js" as="script"><link rel="preload" href="/assets/js/34.3dd5a283.js" as="script"><link rel="prefetch" href="/assets/js/10.68538d1e.js"><link rel="prefetch" href="/assets/js/11.de97b93b.js"><link rel="prefetch" href="/assets/js/12.4ab09f98.js"><link rel="prefetch" href="/assets/js/13.d325b3df.js"><link rel="prefetch" href="/assets/js/14.0295d007.js"><link rel="prefetch" href="/assets/js/15.a87ff052.js"><link rel="prefetch" href="/assets/js/16.994a0851.js"><link rel="prefetch" href="/assets/js/17.7e86fbc6.js"><link rel="prefetch" href="/assets/js/18.72a5c445.js"><link rel="prefetch" href="/assets/js/19.20ae5ac9.js"><link rel="prefetch" href="/assets/js/20.dc34e009.js"><link rel="prefetch" href="/assets/js/21.bb8700ad.js"><link rel="prefetch" href="/assets/js/22.bb416506.js"><link rel="prefetch" href="/assets/js/23.2321e5b0.js"><link rel="prefetch" href="/assets/js/24.b6f0b51a.js"><link rel="prefetch" href="/assets/js/25.bfd278b9.js"><link rel="prefetch" href="/assets/js/26.99227192.js"><link rel="prefetch" href="/assets/js/27.c1d3ee44.js"><link rel="prefetch" href="/assets/js/28.732383d3.js"><link rel="prefetch" href="/assets/js/29.15c8abea.js"><link rel="prefetch" href="/assets/js/3.561367c0.js"><link rel="prefetch" href="/assets/js/30.577bbe6a.js"><link rel="prefetch" href="/assets/js/31.afe20104.js"><link rel="prefetch" href="/assets/js/32.06639946.js"><link rel="prefetch" href="/assets/js/33.f8f0c301.js"><link rel="prefetch" href="/assets/js/35.fd73797e.js"><link rel="prefetch" href="/assets/js/36.c253724f.js"><link rel="prefetch" href="/assets/js/37.ccd77203.js"><link rel="prefetch" href="/assets/js/38.2d5e0a42.js"><link rel="prefetch" href="/assets/js/39.746b4fb3.js"><link rel="prefetch" href="/assets/js/4.00040a07.js"><link rel="prefetch" href="/assets/js/40.89036499.js"><link rel="prefetch" href="/assets/js/41.fa6d72fd.js"><link rel="prefetch" href="/assets/js/42.af0977da.js"><link rel="prefetch" href="/assets/js/43.cae8f002.js"><link rel="prefetch" href="/assets/js/44.c0f9b0c1.js"><link rel="prefetch" href="/assets/js/45.283456dd.js"><link rel="prefetch" href="/assets/js/46.be77c53a.js"><link rel="prefetch" href="/assets/js/47.60898e5d.js"><link rel="prefetch" href="/assets/js/48.18c1ab53.js"><link rel="prefetch" href="/assets/js/49.6921b3da.js"><link rel="prefetch" href="/assets/js/5.f66a3a50.js"><link rel="prefetch" href="/assets/js/50.f191ed64.js"><link rel="prefetch" href="/assets/js/51.40825d28.js"><link rel="prefetch" href="/assets/js/52.ea5839b3.js"><link rel="prefetch" href="/assets/js/53.6a529757.js"><link rel="prefetch" href="/assets/js/54.49d4eea6.js"><link rel="prefetch" href="/assets/js/55.66648c00.js"><link rel="prefetch" href="/assets/js/56.6b09d08f.js"><link rel="prefetch" href="/assets/js/57.a5a062f0.js"><link rel="prefetch" href="/assets/js/58.36739884.js"><link rel="prefetch" href="/assets/js/59.ffaf1a40.js"><link rel="prefetch" href="/assets/js/6.78abfdf0.js"><link rel="prefetch" href="/assets/js/60.3f7577d3.js"><link rel="prefetch" href="/assets/js/61.54b42ef3.js"><link rel="prefetch" href="/assets/js/7.4505bfef.js"><link rel="prefetch" href="/assets/js/8.e3562a43.js"><link rel="prefetch" href="/assets/js/9.e1b8a979.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.6bab8de6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a0e9688a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Wee</span></a> <div class="links" style="max-width:nullpx;"><form id="search-form" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/v4/" class="nav-link">v4</a></div><div class="nav-item"><a href="/v3/" class="nav-link router-link-active">v3</a></div><div class="nav-item"><a href="https://github.com/weepower/wee" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/weepower/wee/archive/master.zip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Download
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/v4/" class="nav-link">v4</a></div><div class="nav-item"><a href="/v3/" class="nav-link router-link-active">v3</a></div><div class="nav-item"><a href="https://github.com/weepower/wee" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/weepower/wee/archive/master.zip" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Download
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/v3/" class="sidebar-link">Get Started</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Start</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CLI</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Build</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Generate</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Styles</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/v3/styles/" class="sidebar-link">Style</a></li><li><a href="/v3/styles/variables.html" class="active sidebar-link">Variables</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#addresses" class="sidebar-link">Addresses</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#base" class="sidebar-link">Base</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#buttons" class="sidebar-link">Buttons</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#code" class="sidebar-link">Code</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#colors" class="sidebar-link">Colors</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#fonts" class="sidebar-link">Fonts</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#forms" class="sidebar-link">Forms</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#grayscale" class="sidebar-link">Grayscale</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#headings" class="sidebar-link">Headings</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#horizontal-rules" class="sidebar-link">Horizontal Rules</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#images" class="sidebar-link">Images</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#layout" class="sidebar-link">Layout</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#links" class="sidebar-link">Links</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#lists" class="sidebar-link">Lists</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#miscellaneous" class="sidebar-link">Miscellaneous</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#paragraphs" class="sidebar-link">Paragraphs</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#print" class="sidebar-link">Print</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#quotes" class="sidebar-link">Quotes</a></li><li class="sidebar-sub-header"><a href="/v3/styles/variables.html#tables" class="sidebar-link">Tables</a></li></ul></li><li><a href="/v3/styles/mixins.html" class="sidebar-link">Mixins</a></li><li><a href="/v3/styles/classes.html" class="sidebar-link">Classes</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Script</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="variables"><a href="#variables" aria-hidden="true" class="header-anchor">#</a> Variables</h1> <h2 id="addresses"><a href="#addresses" aria-hidden="true" class="header-anchor">#</a> Addresses</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@addressColor<span class="token punctuation">:</span></span> <span class="token variable">@darkestGray</span><span class="token punctuation">;</span>
+<span class="token variable">@addressFont<span class="token punctuation">:</span></span> <span class="token variable">@baseFont</span><span class="token punctuation">;</span>
+<span class="token variable">@addressFontSize<span class="token punctuation">:</span></span> <span class="token variable">@baseFontSize</span><span class="token punctuation">;</span>
+<span class="token variable">@addressFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@addressFontStyle<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@addressLineHeight<span class="token punctuation">:</span></span> <span class="token variable">@paragraphLineHeight</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="base"><a href="#base" aria-hidden="true" class="header-anchor">#</a> Base</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token comment">// Default units</span>
+
+<span class="token variable">@defaultUnit<span class="token punctuation">:</span></span> rem<span class="token punctuation">;</span> <span class="token comment">// unitless value default</span>
+<span class="token variable">@defaultFontSizeUnit<span class="token punctuation">:</span></span> <span class="token variable">@defaultUnit</span><span class="token punctuation">;</span>
+<span class="token variable">@defaultLineHeightUnit<span class="token punctuation">:</span></span> em<span class="token punctuation">;</span>
+
+<span class="token comment">// Root sizing</span>
+
+<span class="token variable">@rootFontSize<span class="token punctuation">:</span></span> 62.5%<span class="token punctuation">;</span> <span class="token comment">// root font size (62.5% = 10px, 100% = 16px)// All rem-based units are relative to the root size above</span>
+
+<span class="token variable">@baseColor<span class="token punctuation">:</span></span> <span class="token variable">@darkestGray</span><span class="token punctuation">;</span>
+<span class="token variable">@baseFont<span class="token punctuation">:</span></span> Arial<span class="token punctuation">,</span> Helvetica<span class="token punctuation">,</span> sans<span class="token operator">-</span>serif<span class="token punctuation">;</span>
+<span class="token variable">@baseFontSize<span class="token punctuation">:</span></span> 1.6<span class="token punctuation">;</span>
+<span class="token variable">@baseFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@baseLineHeight<span class="token punctuation">:</span></span> 1em<span class="token punctuation">;</span>
+
+<span class="token variable">@bodyBackground<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+</code></pre></div><h2 id="buttons"><a href="#buttons" aria-hidden="true" class="header-anchor">#</a> Buttons</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@buttonStyled<span class="token punctuation">:</span></span> true<span class="token punctuation">;</span>
+
+<span class="token variable">@buttonColor<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span>
+<span class="token variable">@buttonFont<span class="token punctuation">:</span></span> <span class="token variable">@baseFont</span><span class="token punctuation">;</span>
+<span class="token variable">@buttonFontSize<span class="token punctuation">:</span></span> <span class="token variable">@baseFontSize</span><span class="token punctuation">;</span>
+<span class="token variable">@buttonFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+
+<span class="token variable">@buttonPaddingHorizontal<span class="token punctuation">:</span></span> 3<span class="token punctuation">;</span>
+<span class="token variable">@buttonPaddingVertical<span class="token punctuation">:</span></span> 1.3<span class="token punctuation">;</span>
+
+<span class="token variable">@buttonMarginBottom<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token variable">@buttonRounded<span class="token punctuation">:</span></span> <span class="token variable">@defaultRadius</span><span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+
+<span class="token variable">@buttonTransitionEnabled<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token variable">@buttonBackground<span class="token punctuation">:</span></span> <span class="token variable">@darkGray</span><span class="token punctuation">;</span>
+<span class="token variable">@buttonBackgroundHover<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@buttonBackground</span><span class="token punctuation">,</span> 5%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@buttonBackgroundActive<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@buttonBackground</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">@buttonBorderColor<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// false to disable// Colored Buttons</span>
+
+<span class="token variable">@coloredButtonClassModifier<span class="token punctuation">:</span></span> button<span class="token operator">-</span>colored<span class="token punctuation">;</span>
+
+<span class="token variable">@coloredButtonColor<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span> <span class="token comment">// font color</span>
+
+<span class="token variable">@coloredButtonBackground<span class="token punctuation">:</span></span> <span class="token variable">@linkColor</span><span class="token punctuation">;</span>
+<span class="token variable">@coloredButtonBackgroundHover<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@coloredButtonBackground</span><span class="token punctuation">,</span> 5%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@coloredButtonBackgroundActive<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@coloredButtonBackground</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">@coloredButtonBorderColor<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token comment">// Disabled Buttons</span>
+
+<span class="token variable">@disabledButtonClassModifier<span class="token punctuation">:</span></span> button<span class="token operator">-</span>disabled<span class="token punctuation">;</span>
+
+<span class="token variable">@disabledButtonColor<span class="token punctuation">:</span></span> <span class="token variable">@darkGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@disabledButtonBackground<span class="token punctuation">:</span></span> <span class="token variable">@lightGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@disabledButtonBorderColor<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token variable">@disabledButtonCursor<span class="token punctuation">:</span></span> not<span class="token operator">-</span>allowed<span class="token punctuation">;</span>
+</code></pre></div><h2 id="code"><a href="#code" aria-hidden="true" class="header-anchor">#</a> Code</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@codeColor<span class="token punctuation">:</span></span> <span class="token variable">@darkestGray</span><span class="token punctuation">;</span>
+<span class="token variable">@codeFont<span class="token punctuation">:</span></span> monospace<span class="token punctuation">;</span>
+<span class="token variable">@codeFontSize<span class="token punctuation">:</span></span> <span class="token variable">@baseFontSize</span><span class="token punctuation">;</span>
+<span class="token variable">@codeLineHeight<span class="token punctuation">:</span></span> 1.4em<span class="token punctuation">;</span>
+
+<span class="token variable">@codeBackground<span class="token punctuation">:</span></span> <span class="token variable">@lighterGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@codeBorderColor<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+<span class="token variable">@codeRounded<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token variable">@codePaddingHorizontal<span class="token punctuation">:</span></span> .5em<span class="token punctuation">;</span>
+<span class="token variable">@codePaddingVertical<span class="token punctuation">:</span></span> .2em<span class="token punctuation">;</span>
+
+<span class="token variable">@codeBlockColor<span class="token punctuation">:</span></span> <span class="token variable">@lightestGray</span><span class="token punctuation">;</span>
+<span class="token variable">@codeBlockFont<span class="token punctuation">:</span></span> <span class="token variable">@codeFont</span><span class="token punctuation">;</span>
+<span class="token variable">@codeBlockFontSize<span class="token punctuation">:</span></span> 1.3<span class="token punctuation">;</span>
+<span class="token variable">@codeBlockLineHeight<span class="token punctuation">:</span></span> <span class="token variable">@paragraphLineHeight</span><span class="token punctuation">;</span>
+<span class="token variable">@codeBlockTabSize<span class="token punctuation">:</span></span> 4<span class="token punctuation">;</span>
+<span class="token variable">@codeBlockWrap<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+<span class="token variable">@codeBlockMarginBottom<span class="token punctuation">:</span></span> <span class="token variable">@blockMarginBottom</span><span class="token punctuation">;</span>
+
+<span class="token variable">@codeBlockBackground<span class="token punctuation">:</span></span> <span class="token variable">@darkestGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@codeBlockBorderColor<span class="token punctuation">:</span></span> <span class="token variable">@codeBorderColor</span><span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+<span class="token variable">@codeBlockRounded<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token variable">@codeBlockPaddingHorizontal<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+<span class="token variable">@codeBlockPaddingVertical<span class="token punctuation">:</span></span> 1.4<span class="token punctuation">;</span>
+</code></pre></div><h2 id="colors"><a href="#colors" aria-hidden="true" class="header-anchor">#</a> Colors</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@primary<span class="token punctuation">:</span></span> #349bb9<span class="token punctuation">;</span>
+<span class="token variable">@secondary<span class="token punctuation">:</span></span> #70c1b3<span class="token punctuation">;</span>
+<span class="token variable">@tertiary<span class="token punctuation">:</span></span> #f18f01<span class="token punctuation">;</span>
+
+<span class="token variable">@info<span class="token punctuation">:</span></span> #00f<span class="token punctuation">;</span>
+<span class="token variable">@success<span class="token punctuation">:</span></span> #008000<span class="token punctuation">;</span>
+<span class="token variable">@warning<span class="token punctuation">:</span></span> #f00<span class="token punctuation">;</span>
+</code></pre></div><h2 id="fonts"><a href="#fonts" aria-hidden="true" class="header-anchor">#</a> Fonts</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@fontPath<span class="token punctuation">:</span></span> <span class="token string">'../fonts/'</span><span class="token punctuation">;</span> <span class="token comment">// absolute or relative path</span>
+
+<span class="token variable">@woff2Enabled<span class="token punctuation">:</span></span> true<span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+</code></pre></div><h2 id="forms"><a href="#forms" aria-hidden="true" class="header-anchor">#</a> Forms</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token comment">// Inputs</span>
+
+<span class="token variable">@inputColor<span class="token punctuation">:</span></span> <span class="token variable">@darkerGray</span><span class="token punctuation">;</span>
+<span class="token variable">@inputFont<span class="token punctuation">:</span></span> <span class="token variable">@baseFont</span><span class="token punctuation">;</span>
+<span class="token variable">@inputFontSize<span class="token punctuation">:</span></span> <span class="token variable">@baseFontSize</span><span class="token punctuation">;</span>
+<span class="token variable">@inputFontWeight<span class="token punctuation">:</span></span> <span class="token variable">@baseFontWeight</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBackground<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBorderColor<span class="token punctuation">:</span></span> <span class="token variable">@lighterGray</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderColorHover<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColor</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderColorFocus<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColor</span><span class="token punctuation">,</span> 20%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderWidth<span class="token punctuation">:</span></span> 1px<span class="token punctuation">;</span>        <span class="token comment">// false to disable</span>
+<span class="token variable">@inputRounded<span class="token punctuation">:</span></span> <span class="token variable">@defaultRadius</span><span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+
+<span class="token variable">@inputMinWidth<span class="token punctuation">:</span></span> 20<span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+<span class="token variable">@inputMinHeight<span class="token punctuation">:</span></span> 3<span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+
+<span class="token variable">@inputPaddingHorizontal<span class="token punctuation">:</span></span> 1.6<span class="token punctuation">;</span>
+<span class="token variable">@inputPaddingVertical<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+
+<span class="token variable">@inputMarginBottom<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+
+<span class="token variable">@inputPlaceholderColor<span class="token punctuation">:</span></span> <span class="token function">lighten</span><span class="token punctuation">(</span><span class="token variable">@inputColor</span><span class="token punctuation">,</span> 40%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Invalid Inputs</span>
+
+<span class="token variable">@inputColorInvalid<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColorInvalid</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBackgroundInvalid<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBorderColorInvalid<span class="token punctuation">:</span></span> #a41818<span class="token punctuation">;</span>
+<span class="token variable">@inputBorderColorInvalidHover<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColorInvalid</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderColorInvalidFocus<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColorInvalid</span><span class="token punctuation">,</span> 20%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderWidthInvalid<span class="token punctuation">:</span></span> 1px<span class="token punctuation">;</span> <span class="token comment">// false to disable// Required Inputs</span>
+
+<span class="token variable">@inputColorRequired<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColorRequired</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBackgroundRequired<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBorderColorRequired<span class="token punctuation">:</span></span> <span class="token variable">@darkGray</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderColorRequiredHover<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColorRequired</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderColorRequiredFocus<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@inputBorderColorRequired</span><span class="token punctuation">,</span> 20%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@inputBorderWidthRequired<span class="token punctuation">:</span></span> 1px<span class="token punctuation">;</span> <span class="token comment">// false to disable// Disabled Inputs</span>
+
+<span class="token variable">@inputColorDisabled<span class="token punctuation">:</span></span> <span class="token variable">@darkGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBackgroundDisabled<span class="token punctuation">:</span></span> <span class="token variable">@lightestGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@inputBorderWidthDisabled<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+
+<span class="token variable">@inputCursorDisabled<span class="token punctuation">:</span></span> not<span class="token operator">-</span>allowed<span class="token punctuation">;</span>
+
+<span class="token comment">// Selects</span>
+
+<span class="token variable">@multiSelectMinHeight<span class="token punctuation">:</span></span> 8<span class="token punctuation">;</span>
+
+<span class="token comment">// Checkboxes</span>
+
+<span class="token variable">@checkboxMarginBottom<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+<span class="token variable">@checkboxMarginRight<span class="token punctuation">:</span></span> .5<span class="token punctuation">;</span>
+
+<span class="token comment">// Textareas</span>
+
+<span class="token variable">@textareaLineHeight<span class="token punctuation">:</span></span> 1.3em<span class="token punctuation">;</span>
+<span class="token variable">@textareaMinHeight<span class="token punctuation">:</span></span> 8<span class="token punctuation">;</span>
+<span class="token variable">@textareaResize<span class="token punctuation">:</span></span> vertical<span class="token punctuation">;</span> <span class="token comment">// none, horizontal, vertical, both</span>
+<span class="token variable">@textareaPaddingHorizontal<span class="token punctuation">:</span></span> 1.6<span class="token punctuation">;</span>
+<span class="token variable">@textareaPaddingVertical<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+
+<span class="token comment">// Legends</span>
+
+<span class="token variable">@legendColor<span class="token punctuation">:</span></span> <span class="token variable">@darkerGray</span><span class="token punctuation">;</span>
+<span class="token variable">@legendFont<span class="token punctuation">:</span></span> <span class="token variable">@baseFont</span><span class="token punctuation">;</span>
+<span class="token variable">@legendFontSize<span class="token punctuation">:</span></span> 1.8<span class="token punctuation">;</span>
+
+<span class="token variable">@legendMarginBottom<span class="token punctuation">:</span></span> 1.4<span class="token punctuation">;</span>
+
+<span class="token comment">// Labels</span>
+
+<span class="token variable">@labelFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@labelLineHeight<span class="token punctuation">:</span></span> 1.3em<span class="token punctuation">;</span>
+
+<span class="token variable">@labelMarginBottom<span class="token punctuation">:</span></span> .4<span class="token punctuation">;</span>
+<span class="token variable">@labelMarginRight<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+</code></pre></div><h2 id="grayscale"><a href="#grayscale" aria-hidden="true" class="header-anchor">#</a> Grayscale</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@white<span class="token punctuation">:</span></span> #fff<span class="token punctuation">;</span>
+<span class="token variable">@lightestGray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 4%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@lighterGray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@lightGray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 25%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@gray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 35%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@darkGray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 55%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@darkerGray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 65%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@darkestGray<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span>#fff<span class="token punctuation">,</span> 75%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@black<span class="token punctuation">:</span></span> #000<span class="token punctuation">;</span>
+</code></pre></div><h2 id="headings"><a href="#headings" aria-hidden="true" class="header-anchor">#</a> Headings</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@headingColor<span class="token punctuation">:</span></span> <span class="token variable">@baseColor</span><span class="token punctuation">;</span>
+<span class="token variable">@headingFont<span class="token punctuation">:</span></span> Tahoma<span class="token punctuation">,</span> Geneva<span class="token punctuation">,</span> sans<span class="token operator">-</span>serif<span class="token punctuation">;</span>
+<span class="token variable">@headingFontWeight<span class="token punctuation">:</span></span> <span class="token variable">@boldFontWeight</span><span class="token punctuation">;</span>
+<span class="token variable">@headingLineHeight<span class="token punctuation">:</span></span> 1.4em<span class="token punctuation">;</span>
+
+<span class="token variable">@headingMarginBottom<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+
+<span class="token variable">@h1<span class="token punctuation">:</span></span> 3.6<span class="token punctuation">;</span> <span class="token comment">// font sizes</span>
+<span class="token variable">@h2<span class="token punctuation">:</span></span> 3.2<span class="token punctuation">;</span>
+<span class="token variable">@h3<span class="token punctuation">:</span></span> 2.8<span class="token punctuation">;</span>
+<span class="token variable">@h4<span class="token punctuation">:</span></span> 2.4<span class="token punctuation">;</span>
+<span class="token variable">@h5<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+<span class="token variable">@h6<span class="token punctuation">:</span></span> 1.6<span class="token punctuation">;</span>
+</code></pre></div><h2 id="horizontal-rules"><a href="#horizontal-rules" aria-hidden="true" class="header-anchor">#</a> Horizontal Rules</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@ruleColor<span class="token punctuation">:</span></span> <span class="token variable">@lightGray</span><span class="token punctuation">;</span>
+<span class="token variable">@ruleHeight<span class="token punctuation">:</span></span> 1px<span class="token punctuation">;</span>
+<span class="token variable">@ruleStyle<span class="token punctuation">:</span></span> solid<span class="token punctuation">;</span>
+<span class="token variable">@ruleMargin<span class="token punctuation">:</span></span> <span class="token variable">@blockMarginBottom</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="images"><a href="#images" aria-hidden="true" class="header-anchor">#</a> Images</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@imagePath<span class="token punctuation">:</span></span> <span class="token string">'../img/'</span><span class="token punctuation">;</span>         <span class="token comment">// absolute or relative path</span>
+<span class="token variable">@spriteFilename<span class="token punctuation">:</span></span> <span class="token string">'sprite.png'</span><span class="token punctuation">;</span> <span class="token comment">// relative to image path above</span>
+
+<span class="token variable">@retinaSpriteWidth<span class="token punctuation">:</span></span> auto<span class="token punctuation">;</span>
+<span class="token variable">@retinaSpriteHeight<span class="token punctuation">:</span></span> auto<span class="token punctuation">;</span>
+
+<span class="token comment">// Margin applied when using img-left and img-right classes</span>
+
+<span class="token variable">@imageMarginBottom<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+<span class="token variable">@imageMarginSide<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+
+<span class="token variable">@retinaSuffix<span class="token punctuation">:</span></span> <span class="token string">'-2x'</span><span class="token punctuation">;</span> <span class="token comment">// retina filename suffix// Figures</span>
+
+<span class="token variable">@figureBorderColor<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+<span class="token variable">@figureRounded<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>
+
+<span class="token variable">@figurePadding<span class="token punctuation">:</span></span> <span class="token variable">@blockMarginBottom</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Figure Captions</span>
+
+<span class="token variable">@figCaptionColor<span class="token punctuation">:</span></span> <span class="token variable">@darkGray</span><span class="token punctuation">;</span>
+<span class="token variable">@figCaptionFontStyle<span class="token punctuation">:</span></span> italic<span class="token punctuation">;</span>
+<span class="token variable">@figCaptionLineHeight<span class="token punctuation">:</span></span> <span class="token variable">@paragraphLineHeight</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Alignment</span>
+
+<span class="token variable">@imageLeftClass<span class="token punctuation">:</span></span> img<span class="token operator">-</span>left<span class="token punctuation">;</span>
+<span class="token variable">@imageRightClass<span class="token punctuation">:</span></span> img<span class="token operator">-</span>right<span class="token punctuation">;</span>
+</code></pre></div><h2 id="layout"><a href="#layout" aria-hidden="true" class="header-anchor">#</a> Layout</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@minWidth<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span>  <span class="token comment">// min container width, false to disable</span>
+<span class="token variable">@maxWidth<span class="token punctuation">:</span></span> 1280px<span class="token punctuation">;</span> <span class="token comment">// max container width, false to disable</span>
+
+<span class="token variable">@bumperPadding<span class="token punctuation">:</span></span> 6%<span class="token punctuation">;</span>  <span class="token comment">// bumper padding on containers, false to disable</span>
+<span class="token variable">@padContainer<span class="token punctuation">:</span></span> true<span class="token punctuation">;</span> <span class="token comment">// enable bumperPadding on containers</span>
+
+<span class="token variable">@gridMargin<span class="token punctuation">:</span></span> 5%<span class="token punctuation">;</span> <span class="token comment">// default margin for spaced columns</span>
+<span class="token variable">@gridColumns<span class="token punctuation">:</span></span> 8<span class="token punctuation">;</span> <span class="token comment">// default number of columns in grid</span>
+
+<span class="token variable">@gridSpaceless<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// set to true to eliminate inline grid whitespace hack</span>
+
+<span class="token variable">@blockMarginBottom<span class="token punctuation">:</span></span> 4<span class="token punctuation">;</span> <span class="token comment">// default spacing for lists, form elements, and other blocks</span>
+</code></pre></div><h2 id="links"><a href="#links" aria-hidden="true" class="header-anchor">#</a> Links</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@linkColor<span class="token punctuation">:</span></span> <span class="token variable">@primary</span><span class="token punctuation">;</span>
+<span class="token variable">@linkColorHover<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@linkColor</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">@linkColorActive<span class="token punctuation">:</span></span> <span class="token function">darken</span><span class="token punctuation">(</span><span class="token variable">@linkColor</span><span class="token punctuation">,</span> 20%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">@linkDecoration<span class="token punctuation">:</span></span> none<span class="token punctuation">;</span>       <span class="token comment">// none, underline</span>
+<span class="token variable">@linkDecorationHover<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// none, underline, false</span>
+</code></pre></div><h2 id="lists"><a href="#lists" aria-hidden="true" class="header-anchor">#</a> Lists</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@listColor<span class="token punctuation">:</span></span> <span class="token variable">@paragraphColor</span><span class="token punctuation">;</span>
+<span class="token variable">@listLineHeight<span class="token punctuation">:</span></span> <span class="token variable">@paragraphLineHeight</span><span class="token punctuation">;</span>
+
+<span class="token variable">@listMarginBottom<span class="token punctuation">:</span></span> <span class="token variable">@paragraphMarginBottom</span><span class="token punctuation">;</span>
+<span class="token variable">@listMarginLeft<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// false to disable</span>
+
+<span class="token variable">@listBulletStyle<span class="token punctuation">:</span></span> disc<span class="token punctuation">;</span>      <span class="token comment">// disc, circle, square, etc</span>
+<span class="token variable">@listBulletPosition<span class="token punctuation">:</span></span> inside<span class="token punctuation">;</span> <span class="token comment">// inside or outside</span>
+
+<span class="token variable">@nestedListMarginLeft<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+
+<span class="token variable">@liMarginBottom<span class="token punctuation">:</span></span> .2<span class="token punctuation">;</span> <span class="token comment">// false to disable// Description Lists</span>
+
+<span class="token variable">@dlMarginBottom<span class="token punctuation">:</span></span> <span class="token variable">@blockMarginBottom</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Description List Titles</span>
+
+<span class="token variable">@dtColor<span class="token punctuation">:</span></span> <span class="token variable">@darkerGray</span><span class="token punctuation">;</span>
+<span class="token variable">@dtFont<span class="token punctuation">:</span></span> <span class="token variable">@headingFont</span><span class="token punctuation">;</span>
+<span class="token variable">@dtFontSize<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+
+<span class="token variable">@dtMarginBottom<span class="token punctuation">:</span></span> .2<span class="token punctuation">;</span>
+
+<span class="token comment">// Description List Items</span>
+
+<span class="token variable">@ddColor<span class="token punctuation">:</span></span> <span class="token variable">@gray</span><span class="token punctuation">;</span>
+<span class="token variable">@ddFont<span class="token punctuation">:</span></span> <span class="token variable">@baseFont</span><span class="token punctuation">;</span>
+<span class="token variable">@ddFontSize<span class="token punctuation">:</span></span> <span class="token variable">@baseFontSize</span><span class="token punctuation">;</span>
+
+<span class="token variable">@ddMarginBottom<span class="token punctuation">:</span></span> 1<span class="token punctuation">;</span>
+</code></pre></div><h2 id="miscellaneous"><a href="#miscellaneous" aria-hidden="true" class="header-anchor">#</a> Miscellaneous</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@smallFontSize<span class="token punctuation">:</span></span> .8em<span class="token punctuation">;</span>
+
+<span class="token variable">@selectionColor<span class="token punctuation">:</span></span> <span class="token variable">@white</span><span class="token punctuation">;</span>
+<span class="token variable">@selectionBackground<span class="token punctuation">:</span></span> <span class="token variable">@linkColor</span><span class="token punctuation">;</span>
+
+<span class="token variable">@boldFontWeight<span class="token punctuation">:</span></span> bold<span class="token punctuation">;</span>
+<span class="token variable">@normalFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+
+<span class="token variable">@markColor<span class="token punctuation">:</span></span> <span class="token variable">@baseColor</span><span class="token punctuation">;</span>
+<span class="token variable">@markBackground<span class="token punctuation">:</span></span> yellow<span class="token punctuation">;</span>
+
+<span class="token variable">@defaultRadius<span class="token punctuation">:</span></span> 3px<span class="token punctuation">;</span>
+<span class="token variable">@defaultOpacity<span class="token punctuation">:</span></span> .2<span class="token punctuation">;</span>
+<span class="token variable">@defaultDuration<span class="token punctuation">:</span></span> .2s<span class="token punctuation">;</span>
+<span class="token variable">@defaultTiming<span class="token punctuation">:</span></span> ease<span class="token operator">-</span>in<span class="token operator">-</span>out<span class="token punctuation">;</span>
+
+<span class="token variable">@abbrUnderline<span class="token punctuation">:</span></span> dotted<span class="token punctuation">;</span> <span class="token comment">// dotted, solid, none</span>
+</code></pre></div><h2 id="paragraphs"><a href="#paragraphs" aria-hidden="true" class="header-anchor">#</a> Paragraphs</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@paragraphColor<span class="token punctuation">:</span></span> <span class="token variable">@baseColor</span><span class="token punctuation">;</span>
+<span class="token variable">@paragraphFontWeight<span class="token punctuation">:</span></span> <span class="token variable">@baseFontWeight</span><span class="token punctuation">;</span>
+<span class="token variable">@paragraphLineHeight<span class="token punctuation">:</span></span> 1.7em<span class="token punctuation">;</span>
+
+<span class="token variable">@paragraphMarginBottom<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+</code></pre></div><h2 id="print"><a href="#print" aria-hidden="true" class="header-anchor">#</a> Print</h2> <div class="language- extra-class"><pre class="language-text"><code>@printPageMargin: 2cm .5cm;
+</code></pre></div><h2 id="quotes"><a href="#quotes" aria-hidden="true" class="header-anchor">#</a> Quotes</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@quoteColor<span class="token punctuation">:</span></span> <span class="token variable">@darkestGray</span><span class="token punctuation">;</span>
+<span class="token variable">@quoteFont<span class="token punctuation">:</span></span> Georgia<span class="token punctuation">,</span> Times<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+<span class="token variable">@quoteFontSize<span class="token punctuation">:</span></span> 2<span class="token punctuation">;</span>
+<span class="token variable">@quoteFontStyle<span class="token punctuation">:</span></span> italic<span class="token punctuation">;</span>
+<span class="token variable">@quoteFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@quoteLineHeight<span class="token punctuation">:</span></span> 1.4em<span class="token punctuation">;</span>
+
+<span class="token variable">@quotePaddingHorizontal<span class="token punctuation">:</span></span> 2em<span class="token punctuation">;</span>
+<span class="token variable">@quotePaddingVertical<span class="token punctuation">:</span></span> 1em<span class="token punctuation">;</span>
+
+<span class="token comment">// Cites</span>
+
+<span class="token variable">@citeColor<span class="token punctuation">:</span></span> <span class="token variable">@gray</span><span class="token punctuation">;</span>
+<span class="token variable">@citeFont<span class="token punctuation">:</span></span> <span class="token variable">@baseFont</span><span class="token punctuation">;</span>
+<span class="token variable">@citeFontSize<span class="token punctuation">:</span></span> 1.8<span class="token punctuation">;</span>
+<span class="token variable">@citeFontStyle<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@citeFontWeight<span class="token punctuation">:</span></span> normal<span class="token punctuation">;</span>
+<span class="token variable">@citeLineHeight<span class="token punctuation">:</span></span> 1.2em<span class="token punctuation">;</span>
+
+<span class="token variable">@citeMarginTop<span class="token punctuation">:</span></span> 1.4<span class="token punctuation">;</span>
+
+<span class="token variable">@citeIndicator<span class="token punctuation">:</span></span> <span class="token string">'\2014\00a0'</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="tables"><a href="#tables" aria-hidden="true" class="header-anchor">#</a> Tables</h2> <div class="language-less extra-class"><pre class="language-less"><code><span class="token variable">@tableStyled<span class="token punctuation">:</span></span> true<span class="token punctuation">;</span>    <span class="token comment">// apply base styling by default</span>
+<span class="token variable">@tableBordered<span class="token punctuation">:</span></span> false<span class="token punctuation">;</span> <span class="token comment">// apply outer border by default</span>
+<span class="token variable">@tableStriped<span class="token punctuation">:</span></span> true<span class="token punctuation">;</span>   <span class="token comment">// apply striping by default</span>
+
+<span class="token variable">@tableFontSize<span class="token punctuation">:</span></span> <span class="token variable">@baseFontSize</span><span class="token punctuation">;</span>
+
+<span class="token variable">@tableBorderedClassModifier<span class="token punctuation">:</span></span> table<span class="token operator">-</span>bordered<span class="token punctuation">;</span>
+<span class="token variable">@tableStripedClassModifier<span class="token punctuation">:</span></span> table<span class="token operator">-</span>striped<span class="token punctuation">;</span>
+
+<span class="token comment">// Table Cells</span>
+
+<span class="token variable">@tableCellLineHeight<span class="token punctuation">:</span></span> <span class="token variable">@paragraphLineHeight</span><span class="token punctuation">;</span>
+
+<span class="token variable">@tableCellBorderColor<span class="token punctuation">:</span></span> <span class="token variable">@lighterGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@tableCellPaddingHorizontal<span class="token punctuation">:</span></span> 1.6<span class="token punctuation">;</span>
+<span class="token variable">@tableCellPaddingVertical<span class="token punctuation">:</span></span> .6<span class="token punctuation">;</span>
+
+<span class="token comment">// Table Captions</span>
+
+<span class="token variable">@tableCaptionFontStyle<span class="token punctuation">:</span></span> italic<span class="token punctuation">;</span>
+
+<span class="token variable">@tableCaptionBackground<span class="token punctuation">:</span></span> <span class="token variable">@lightestGray</span><span class="token punctuation">;</span>
+
+<span class="token variable">@tableCaptionPaddingVertical<span class="token punctuation">:</span></span> 1.2<span class="token punctuation">;</span>
+<span class="token variable">@tableCaptionPaddingHorizontal<span class="token punctuation">:</span></span> <span class="token variable">@tableCellPaddingHorizontal</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Striping</span>
+
+<span class="token variable">@tableStripedBackground<span class="token punctuation">:</span></span> <span class="token variable">@lightestGray</span><span class="token punctuation">;</span>
+<span class="token variable">@tableStripedPosition<span class="token punctuation">:</span></span> odd<span class="token punctuation">;</span> <span class="token comment">// even, odd</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/v3/styles/" class="prev router-link-active">
+          Style
+        </a></span> <span class="next"><a href="/v3/styles/mixins.html">
+          Mixins
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.47ec8783.js" defer></script><script src="/assets/js/34.3dd5a283.js" defer></script>
+  </body>
+</html>
